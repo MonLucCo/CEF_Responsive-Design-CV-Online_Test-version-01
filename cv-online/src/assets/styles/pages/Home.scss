@@ -1,0 +1,59 @@
+// Home.scss
+
+// Importation des variables personnalisées
+@use '../base/index' as *;
+
+// Section Héro
+.hero-section {
+    position: relative; // Positionnement relatif pour permettre l'utilisation de la surcouche
+    height: 100vh; // Hauteur de la section égale à la hauteur de la fenêtre
+    background-size: cover; // Couvrir toute la section avec l'image de fond
+    background-position: center center; // Centrer l'image de fond
+
+    background-image: url('../../images/home/hero-bg.jpg');
+
+    h1,
+    h2 {
+        color: white; // Changer la couleur des titres pour une meilleure ergonomie visuelle
+    }
+
+    .overlay {
+        background-color: $overlay-color; // Surcouche sombre pour noircir l'image de fond
+        position: absolute; // Positionnement absolu pour couvrir toute la section
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Media Queries pour les Images de Fond et les Offsets
+// @media only screen and (min-width: 0) {
+//     .hero-section {
+//         background-image: url('../../images/home/hero-bg-mobile.jpg'); // Image de fond pour les mobiles
+//     }
+
+//     .home-page {
+//         margin-top: 56px; // Pour éviter le masquage dû à la barre de navigation
+//     }
+// }
+
+// @media only screen and (min-width: 768px) {
+//     .hero-section {
+//         background-image: url('../../images/home/hero-bg-tablette.jpg'); // Image de fond pour les tablettes
+//     }
+
+//     .home-page {
+//         margin-top: 56px; // Pour éviter le masquage dû à la barre de navigation
+//     }
+// }
+
+// @media only screen and (min-width: 992px) {
+//     .hero-section {
+//         background-image: url('../../images/home/hero-bg.jpg'); // Image de fond pour les desktops
+//     }
+
+//     .home-page {
+//         margin-top: 72px; // Pour éviter le masquage dû à la barre de navigation
+//     }
+// }
